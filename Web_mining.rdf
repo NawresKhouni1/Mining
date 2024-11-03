@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://people.brunel.ac.uk//"
+     xml:base="http://people.brunel.ac.uk//"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#staff_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#staff_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#student_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#student_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#CSModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#CSModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#MathModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#MathModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#CS101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#CS101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#CSModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#CS103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#CS103">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#CSModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Lecturer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Lecturer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student"/>
+        <untitled-ontology-8:teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#CS103"/>
+        <untitled-ontology-8:teaches rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#M201"/>
+        <untitled-ontology-8:first_name>Eya</untitled-ontology-8:first_name>
+        <untitled-ontology-8:last_name>Belli</untitled-ontology-8:last_name>
+        <untitled-ontology-8:staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">417686</untitled-ontology-8:staff_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Lecturer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Lecturer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Lecturer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#M201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#M201">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#MathModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#M204 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#M204">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#MathModule"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student"/>
+        <untitled-ontology-8:studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#CS101"/>
+        <untitled-ontology-8:studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#M201"/>
+        <untitled-ontology-8:studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#M204"/>
+        <untitled-ontology-8:first_name>Nawres</untitled-ontology-8:first_name>
+        <untitled-ontology-8:last_name>Khouni</untitled-ontology-8:last_name>
+        <untitled-ontology-8:student_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">266814</untitled-ontology-8:student_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student"/>
+        <untitled-ontology-8:studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#M204"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student"/>
+        <untitled-ontology-8:studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#CS103"/>
+        <untitled-ontology-8:studies rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#M201"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#CSModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Lecturer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#MathModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2024/10/untitled-ontology-8#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
